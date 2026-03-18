@@ -125,8 +125,12 @@ export default function Navbar({ isAuthenticated = false, userName = "Traveler" 
             </div>
           ) : (
             <>
-              <Button variant="outline">Login</Button>
-              <Button>Sign up</Button>
+              <Link href="/login">
+                <Button variant="outline">Login</Button>
+              </Link>
+              <Link href="/register">
+                <Button>Sign up</Button>
+              </Link>
             </>
           )}
         </div>
@@ -174,8 +178,12 @@ export default function Navbar({ isAuthenticated = false, userName = "Traveler" 
                   </>
                 ) : (
                   <>
-                    <Button variant="outline" className="w-full">Login</Button>
-                    <Button className="w-full">Sign up</Button>
+                    <Link href="/login">
+                      <Button variant="outline" className="w-full">Login</Button>
+                    </Link>
+                    <Link href="/register">
+                      <Button className="w-full">Sign up</Button>
+                    </Link>
                   </>
                 )}
               </div>
