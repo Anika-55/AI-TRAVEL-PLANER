@@ -1,0 +1,50 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 30 20% 97%;
+  --foreground: 215 30% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 30% 12%;
+  --primary: 184 86% 32%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 32 30% 94%;
+  --accent-foreground: 215 30% 12%;
+  --border: 215 20% 88%;
+}
+
+.dark {
+  --background: 215 32% 10%;
+  --foreground: 210 40% 98%;
+  --card: 215 32% 14%;
+  --card-foreground: 210 40% 98%;
+  --primary: 184 86% 38%;
+  --primary-foreground: 215 32% 10%;
+  --accent: 215 28% 18%;
+  --accent-foreground: 210 40% 98%;
+  --border: 215 28% 24%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground font-body antialiased;
+}
+
+.section {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.hero-sheen {
+  background: radial-gradient(circle at 15% 10%, rgba(16, 185, 195, 0.25), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(252, 211, 77, 0.25), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.18), transparent 45%);
+}
+
+.glass {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  backdrop-filter: blur(14px);
+}
